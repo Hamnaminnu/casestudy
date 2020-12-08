@@ -27,14 +27,14 @@
     // to the alert message -- promise
  function checkedalert(){
     var promise = new Promise(function(resolve,reject){
-    //    let count = $(".chk:checkbox:checked").length;
-    var inputElems = document.getElementsByClassName("chk");
-    count = 0;
-    for (var i=0; i<inputElems.length; i++) {
-    if (inputElems[i].type === "checkbox" && inputElems[i].checked === true){
-        count++;
-    }
-    }
+    let count = $(".chk:checkbox:checked").length;
+    // var inputElems = document.getElementsByClassName("chk");
+    // count = 0;
+    // for (var i=0; i<inputElems.length; i++) {
+    // if (inputElems[i].type === "checkbox" && inputElems[i].checked === true){
+    //     count++;
+    // }
+    // }
        if (count==5){
             resolve("Congrats. 5 Tasks have been Successfully Completed");
        }
@@ -50,3 +50,6 @@
         console.log(e);
     })
 }
+
+
+
